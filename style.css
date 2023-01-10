@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    
+}
+.heading{
+    color: rgb(237, 239, 245);
+    text-align: center;
+    font-size:250%;
+}
+.menu{
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/menuback.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.nav{
+    flex: 1;
+    text-align: center;
+   background-image: url(images/loginback2.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    list-style: none;
+    width: 10%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li:hover {
+    background: #345d838a;
+    border-radius: 3px;
+}
+
+
+
+@media(max-width: 700px){
+    .heading{
+        font-size: 20px;
+    }
+    .nav ul li{
+        padding: 0;
+        font-size: 50%;
+    }
+    .nav ul li:hover {
+        background: #313da7;
+        border-radius: 3px;
+    }
+    .text-box h2{
+        font-size: 35px;
+    }
+    .text-box p{
+        font-size: 20px;
+    }
+}
+
+
+.text-box {
+  width: 80%;
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    color: #fff;
+    text-align: center;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.text-box .hero-btn{
+    border: 1px solid white; 
+}
+.hero-btn:hover{
+    border: 1px solid #2c94a1;
+    background-color: #4c458a;
+    transition: 1s;
+}
+
+-------------------lOGIN-----------------
+
+.reghead{ 
+  
+}
+.reghead h2{
+    font-size: 300%;
+    padding:10px;
+    text-align: center;
+    color: white;
+    background: url(imagess/loginback2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+.formcol h2{
+    text-align: center;
+    color: white;
+}
+
+.ftab{
+    margin-left: 15%;
+    padding-bottom: 10px;
+    padding-left: 0%;
+    width: 260px;
+    color: white;
+}
+
+.aboutclient-col img{
+    min-height: 600px;
+    max-height: 100vh;
+    margin-left: 0;
+    margin-top: 0px;
+    min-width: 550px;
+    }
+    .aboutclient-col {
+        width: 100%;
+        margin-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+}
+.formcol{
+    min-height: 580px;
+    max-height: 100vh;
+    margin-left: 0;
+    margin-top: 0px;
+    padding-top: 0;
+    font-size: 200%;
+    min-width: 550px;
+    background-image: linear-gradient(135deg,rgba(9, 30, 63, 0.9),rgba(9, 30, 63, 0.55)),url(imagess/propff.JPG);
+    text-align: center;
+}
+
+
+
+label{
+padding-left: 40%;
+}
+
+
+@media(max-width: 700px){
+    .aboutclient-col img{
+      
+        min-width: 120px;
+       max-width: 200px;
+       max-height: 60vh;
+       min-height: 50vh;
+    }
+    .formcol{
+        min-width: 150px;
+       max-width: 215px;
+       max-height: 60vh;
+       min-height: 50vh;
+    }
+    
+    .formcol h2{
+        font-size: 22px;
+        border-bottom: 1px solid #efefef;
+    }
+    .hero-btn{
+        margin-left: 0;
+        padding: 1.5px;
+        width: 10em;
+    }
+    .ftab{
+        margin: 0px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        width: 220px;
+    }
+    .ftab label{
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .ftab input{
+        font-size: 12px;
+        width: 5cm;
+        padding: 2px;
+        margin: 2px;
+    }
+    .forgot{
+        margin-left: 0;
+    }
+}
+
+
+.ftab label{
+    margin:1px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input{
+    
+    padding: 20px;
+    margin: 10px;
+    margin-left: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 9cm;
+}
+input#submit{
+    margin-top: 7px;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    background-color: dodgerblue;
+}
+input#submit:hover {
+    background-color: green;
+    color: white;
+}
+.forgot{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.forgot:hover{
+    background-color: rgb(214, 193, 198);
+}
+
+
+----------------------About----------------------------
+
+.about{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#new{
+    background-image:linear-gradient(135deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 
+    25%, rgba(0,23,149,0.6) 50%, rgba(255,0,0,0.6) 75%,rgba(0,23,149,0.6) 100%),url(images/aboro4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 300%;
+    text-align: left;
+    min-height: 400px;
+    max-height: 600px;
+    min-width: 700px;
+    max-width: 100%;
+    padding-top: 10%;
+    transition: 2s;
+}
+#new h2{
+    font-size: 200%;
+    padding-left: 2%;
+}
+#new:hover{
+    background-position: 100% 100%;
+}
+#new h4{
+    font-size: 50%;
+    padding-left: 2%;
+}
+#new h3{
+    font-size: 100%;
+    padding-left: 2%;
+}
+.ceo h2{
+    text-align: right;
+    padding-top: 10%;
+    font-size: 300%;
+    color: #00020ed2;
+    border-bottom: 2px solid #00020ed2;
+    position: relative;
+}
+.service .hh2{
+    text-align: right;
+    padding-top: 10%;
+    font-size: 300%;
+    color: #00020ed2;
+    border-bottom: 2px solid #00020ed2;
+    position: relative;
+    margin-bottom: 10%;
+}
+.row{
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.row img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+#pic-array{
+    margin-left: 5%;
+    margin-top: 0;
+    display: flex;
+    width: 90%;
+}
+h3{
+    text-align: center;
+    font-size: 200%;
+    color: #1827add2;
+    margin-top: 2%;
+}
+.rowc{
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.rowc h2{
+    text-align: center;
+    font-size: 300%;
+    color: #080808d2;
+    padding-top: 15%;
+}
+.rowc h4{
+    text-align: center;
+    font-size: 300%;
+    color: #01020fd2;
+    padding-top: 10%;
+}
+.rowc img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.inbt{
+    text-align: center;
+    font-size: 300%;
+    color: #000002;
+    padding-top: 5%;
+}
+#pic-arrayc{
+    padding-top: 3%;
+    margin-left: 5%;
+    margin-top: 0;
+    display: flex;
+    width: 95%;
+}
+.rowc p{
+    padding-top: 0;
+    padding-left: 5%;
+    font-size: 150%;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(248, 244, 244, 0.76);
+    border: 5px solid white;
+    padding: 6px 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 5px solid #885a06c5;
+    background: rgb(156, 54, 40);
+    transition: 1s;
+}
+.footer{
+    text-align: center;
+    background-image: url(images/loginback2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s;
+    min-height: 50px;
+    max-height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 200%;
+}
+.footer h4{
+    color: white;
+}
+.copy{
+    text-align: center;
+    background-image: url(images/loginback2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+
+    margin-left: 0;
+    color: white;
+}
+.ceocont{
+    text-align: center;
+    color: rgb(5, 23, 46);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 200%;
+}
+.ceocont a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media(max-width: 700px){
+    #new{
+        min-height: 40vh;
+        max-height: 50vh;
+        min-width: 95%;
+        max-width: 95%;
+        font-size: 200%;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    #new h2{
+        font-size: 15
+        0%;
+    }
+    #new h3{
+        font-size: 70%;
+    }
+    #new h4{
+        font-size: 40%;
+    }
+    .service h2{
+        font-size: 24px;
+    }
+   h3{
+    font-size: 24px;
+   }
+   .row img{
+    height: 150px;
+   }
+    .ceo h2{
+        font-size: 24px;
+    }
+   #pic-arrayc img{
+    width: 95%;
+    height: 300px;
+    margin-left: 5%;
+   }
+   .rowc p{
+    font-size: 95%;
+    text-align: center;
+  padding-right: 0;
+   }
+   #pic-arrayc{
+    flex-direction: column;
+    display: flex;
+     justify-content: space-between;
+     margin-left: 0;
+   }
+   .footer h4{
+    font-size: 24px;
+   }
+   .inbt{
+    font-size: 20px;
+    padding-top: 20%;
+   }
+   .rowc h2{
+    font-size: 30px;
+    padding-top: 5%;
+   }
+   .rowc h4{
+    font-size: 30px;
+    padding-top: 5%;
+   }
+   .service .hh2{
+    font-size: 30px;
+   }
+   .ceocont{
+    font-size: 24px;
+   }
+   td img{
+
+   }
+}
+
+-----------------------Designs------------------
+.about{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#newd{
+    background-image:linear-gradient(135deg, rgba(172, 154, 56, 0.4) 0%,rgba(0,0,0,0.4) 
+    25%, rgba(0,23,149,0.6) 50%, rgba(255,0,0,0.6) 75%,rgba(0,23,149,0.6) 100%),url(images/desback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 300%;
+    text-align: left;
+   height: 100vh;
+    min-width: 700px;
+    max-width: 100%;
+    padding-top: 10%;
+    transition: 2s;
+}
+#newd h2{
+    font-size: 200%;
+    padding-left: 2%;
+    text-align: center;
+    color:black;
+}
+#newd:hover{
+    background-position: 100% 100%;
+}
+#newd h4{
+    font-size: 50%;
+    padding-left: 2%;
+}
+#newd h3{
+    font-size: 100%;
+    padding-left: 0;
+}
+.rowd{
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.rowd img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.rowd h2{
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid black;
+}
+.service .h{
+    text-align: right;
+    border-bottom: 2px solid #000000d2;
+    font-size: 200%;
+}
+.service .hero-btn{
+    color: #070707d2;
+    border: 2px solid#0a0a0ad2;
+    background-color: #f0eff8;
+}
+
+
+@media(max-width: 700px){
+    #newd h2{
+        font-size: 24px;
+    }
+    #newd{
+         min-height: 40vh;
+        max-height: 50vh;
+        min-width: 95%;
+        max-width: 95%;
+        font-size: 200%;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    .service .hero-btn{
+        border: none;
+        background-color: white;
+    }
+    .service .h{
+        font-size: 20px;
+    }
+    table{
+        padding-left: 5%;
+        font-size: 20px;
+    }
+    .rowd h2{
+        color: #000002;
+    }
+}
+
+table{
+    width: 100%;
+    max-height: 100%;
+}
+td{
+    background-color: rgba(15, 99, 209, 0.705);
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    font-size: 200%;
+    height: 125px;
+}
+td img{
+    max-height: 117px;
+    max-width: 100px;
+    padding-left: 35%;
+}
+.rowd{
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    
+}
+td a{
+    text-decoration: none;
+    color: white;
+}
